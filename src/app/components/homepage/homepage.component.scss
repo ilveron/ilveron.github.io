@@ -1,0 +1,45 @@
+$mono: 'VT323', monospace;
+$min_height: calc(100vh - 56px);
+$shadow: 4px 4px rgba(0,0,0,0.05);
+
+.full-name {
+  font-family: $mono;
+  letter-spacing: 0.07em;
+  font-size: 5vw;
+  text-shadow: $shadow;
+}
+
+.home-container {
+  background-image: url(/assets/img/bg.jpg);
+  background-size: cover;
+  min-height: $min_height;
+  box-shadow: inset 0px 0px 150px black;         // Vignette
+}
+
+.jumbotron { }
+
+.propic {
+  border-radius: 25%;
+  max-width: 25vw;
+  box-shadow: $shadow;
+}
+
+.subtitle {
+  text-shadow: $shadow;
+  font-size: 2.2vw;
+  font-weight: 300;
+}
+
+@media(max-width: 767px) {
+  .propic {
+    margin-bottom: 15px;
+  }
+
+  .full-name {
+    font-size: 10vw;
+  }
+
+  .subtitle {
+    font-size: 5vw;
+  }
+}

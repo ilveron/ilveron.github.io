@@ -1,0 +1,32 @@
+{
+  "fullName": "Alessandro Monetti",
+  "birthDate": "2001-07-23T07:30:00.000Z",
+  "currentPosition": "University Student",
+  "bio": "I was born in a hot day of 2001.\nI have been fascinated by technology and music since I was a little kid.\nIn my free time I like to play videogames, play drums and keyboard, shoot pictures and mess around with tech in general",
+  "career": [
+    {
+      "when": "2015-2020",
+      "what": "High School Diploma in Computer Science @ I.T.I. A. Monaco - Cosenza"
+    },
+    {
+      "when": "2020-Current",
+      "what": "Artificial Intelligence (Bachelor) Student @ UNICAL - Rende"
+    }
+  ],
+  "interests": [
+    ["🌐", "Computer Networks"],
+    ["🥁", "Drums"],
+    ["🎹", "Piano"],
+    ["🚵🏻‍♂️", "Mountain Bike"],
+    ["🎵", "Music"],
+    ["📷", "Photography"],
+    ["💾", "Retro tech"]
+  ],
+  "social": {
+    "discord": "https://discordapp.com/users/395961384803762176",
+    "github": "https://github.com/ilveron",
+    "telegram": "https://t.me/AceOfPotatoes",
+    "instagram": "https://www.instagram.com/ilveronmonetti/",
+    "steam": "https://steamcommunity.com/id/ilveron/"
+  }
+}

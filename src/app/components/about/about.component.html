@@ -1,0 +1,58 @@
+<div class="about-container text-center pt-3">
+  <h1 class="about-heading">About me</h1>
+
+  <!-- ABOUT -->
+  <h2 class="sub-heading">Info</h2>
+  <div class="row align-items-center justify-content-center w-100" style="margin: auto">
+    <div class="col-md-4">
+      <img class="propic img-fluid col" src="/assets/img/propic.jpg">
+    </div>
+    <div class="col-md-4 mt-2">
+      <div class="inside-text"><span style="font-weight: 600">Full name:</span> {{me.fullName}}</div>
+      <div class="inside-text"><span style="font-weight: 600">Birth date:</span> {{me.birthDate | date}}</div>
+      <div class="inside-text"><span style="font-weight: 600">Current position:</span> {{me.currentPosition}}</div>
+    </div>
+  </div>
+
+  <hr class="hr ms-5 me-5 mt-5"/>
+
+  <!-- REACH ME -->
+  <h2 class="sub-heading mt-5">Reach me!</h2>
+  <div class="social-container mt-4">
+    <a class="me-3" id="email" target="_blank">             <img class="social-icon img-fluid" alt="Email" src="assets/icons/Outlook.png"></a>
+    <a class="me-3" href="{{me.social.get('github')}}">     <img class="social-icon img-fluid" alt="GitHub" src="assets/icons/GitHub.png"></a>
+    <a href="{{me.social.get('telegram')}}">                <img class="social-icon img-fluid" alt="Telegram"  src="assets/icons/Telegram.png"></a>
+    <a class="ms-3" href="{{me.social.get('discord')}}">    <img class="social-icon img-fluid" alt="Discord" src="assets/icons/Discord.png"></a>
+    <a class="ms-3" href="{{me.social.get('instagram')}}">  <img class="social-icon img-fluid" alt="Instagram" src="assets/icons/Instagram.png"></a>
+    <a class="ms-3" href="{{me.social.get('steam')}}">      <img class="social-icon img-fluid" alt="Steam" src="assets/icons/Steam.png"></a>
+  </div>
+
+  <hr class="hr ms-5 me-5 mt-5"/>
+
+  <!-- CAREER -->
+  <h2 class="sub-heading mt-5">Career</h2>
+  <div class="career-container d-flex justify-content-center">
+    <table class="table mt-4">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">When</th>
+        <th scope="col">What</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let entry of me.career">
+        <th scope="row">{{entry.when}}</th>
+        <td>{{entry.what}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr class="hr ms-5 me-5 mt-5"/>
+
+  <!-- INTERESTS -->
+  <h2 class="sub-heading mt-5">Interests</h2>
+  <div class="interests-container mt-4 pb-5">
+    <span class="badge bg-dark fs-6 me-2" *ngFor="let interest of me.interests">{{interest[0] + " " + interest[1]}}</span>
+  </div>
+</div>

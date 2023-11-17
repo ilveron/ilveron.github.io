@@ -1,0 +1,71 @@
+{
+    "university": [
+        {
+          "name": "The Great Escape",
+          "gitUrl": "https://github.com/ilveron/GreatEscape",
+          "imgUrl": "https://raw.githubusercontent.com/ilveron/GreatEscape/main/ingame-screenshot-1.png",
+          "year": 2023,
+          "description": "Final project made for the Artificial Intelligence course.\nI worked on the game implementation and my team's AI.",
+          "techInvolved": ["Python", "Pygame", "Answer Set Programming", "DLV2", "Clingo", "EmbASP"],
+          "isIndividual": false
+        },
+        {
+            "name": "GoodVibes",
+            "gitUrl": "https://github.com/ilveron/GoodVibes",
+            "imgUrl": "https://i.imgur.com/leQZF3B.png",
+            "year": 2023,
+            "description": "Final project made for the Web Application course.\nI worked on the front-end, which was made in Angular.",
+            "techInvolved": ["Java", "Typescript", "Angular", "Springboot"],
+            "isIndividual": false
+        },
+        {
+            "name": "Media Player UID",
+            "gitUrl": "https://github.com/ilveron/MediaPlayerUID",
+            "imgUrl": "https://user-images.githubusercontent.com/85177113/183476917-c2117258-49ef-4d54-92ab-63420a276205.png",
+            "year": 2022,
+            "description": "Final project made for the User Interfaces Design course.\nI worked on the graphics (for the most part), and on some of the business logic.",
+            "techInvolved": ["Java", "JavaFX"],
+            "isIndividual": false
+        },
+        {
+            "name": "Forest Fire +",
+            "gitUrl": "https://github.com/ilveron/ForestFirePlus_MPI",
+            "imgUrl": "https://user-images.githubusercontent.com/85177113/176749841-785a01e3-55e0-4503-b1e6-1728f6aa0945.png",
+            "year": 2022,
+            "description": "Final project made for the Parallel Programming course.\n",
+            "techInvolved": ["C", "MPI", "Allegro"],
+            "isIndividual": true
+        },
+        {
+            "name": "Libretto Universitario ASM (ASM Student's Record Book)",
+            "gitUrl": "https://github.com/ilveron/LibrettoUniversitarioASM",
+            "imgUrl": "https://i.imgur.com/6PZSOOT.png",
+            "year": 2021,
+            "description": "Final project made for the Computer Architecture course.\n",
+            "techInvolved": ["AArch64 Assembly"],
+            "isIndividual": false
+        }
+    ],
+    "school": [
+        {
+            "name": "Scaldadita (Fingerwarmer)",
+            "gitUrl": "https://github.com/ilveron/Scaldadita",
+            "imgUrl": "https://i.imgur.com/Tz0xHFP.png",
+            "year": 2018,
+            "description": "Videogame developed as part of a school project.",
+            "techInvolved": ["Visual C#"],
+            "isIndividual": true
+        }
+    ],
+    "personal": [
+        {
+            "name": "Processing Stuff",
+            "gitUrl": "https://github.com/ilveron/Processing",
+            "imgUrl": "https://i.imgur.com/r71KJcm.png",
+            "description": "A little bit of training on the Processing environment.",
+            "techInvolved": ["Processing"],
+            "year": 2022,
+            "isIndividual": true
+        }
+    ]
+}
