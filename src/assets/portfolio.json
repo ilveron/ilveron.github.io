@@ -1,13 +1,42 @@
 {
-    "university": [
+    "universityMaster": [
         {
-          "name": "The Great Escape",
-          "gitUrl": "https://github.com/ilveron/GreatEscape",
-          "imgUrl": "https://raw.githubusercontent.com/ilveron/GreatEscape/main/ingame-screenshot-1.png",
-          "year": 2023,
-          "description": "Final project made for the Artificial Intelligence course.\nI worked on the game implementation and my team's AI.",
-          "techInvolved": ["Python", "Pygame", "Answer Set Programming", "DLV2", "Clingo", "EmbASP"],
-          "isIndividual": false
+            "name": "Laughtale",
+            "gitUrl": "https://github.com/laughtale-ssd",
+            "imgUrl": "https://i.imgur.com/13WGIPV.jpeg",
+            "year": 2023,
+            "description": "Final project made for the Secure Software Design course.\nI worked on the TUI front-end and on the back-end. I defined the skeleton for the APIs and developed some filters on data.",
+            "techInvolved": ["Python", "Django REST Framework", "Pytest", "Svelte", "Typescript"],
+            "isIndividual": false
+        },
+        {
+            "name": "School Timetable",
+            "gitUrl": "https://github.com/School-Timetable",
+            "imgUrl": "https://i.imgur.com/Qhwljz5.png",
+            "year": 2023,
+            "description": "Final project made for the Agile Software Development course.\nI worked on some features of the application, especially on the automatic timetable generation.",
+            "techInvolved": ["Svelte", "Typescript", "Jest", "FastAPI", "Python", "DLV2"],
+            "isIndividual": false
+        }
+    ],
+    "universityBachelor": [
+        {
+            "name": "Tadashi",
+            "gitUrl": "https://github.com/ilveron/Tadashi",
+            "imgUrl": "https://i.imgur.com/dlzvWyL.png",
+            "year": 2023,
+            "description": "Bachelor's degree thesis. A correctness suite for I-DLV-sr disjunctive programs.",
+            "techInvolved": ["Python", "Bash", "I-DLV-sr", "DLV2"],
+            "isIndividual": true
+        },
+        {
+            "name": "The Great Escape",
+            "gitUrl": "https://github.com/ilveron/GreatEscape",
+            "imgUrl": "https://raw.githubusercontent.com/ilveron/GreatEscape/main/ingame-screenshot-1.png",
+            "year": 2023,
+            "description": "Final project made for the Artificial Intelligence course.\nI worked on the game implementation and my team's AI.",
+            "techInvolved": ["Python", "Pygame", "Answer Set Programming", "DLV2", "Clingo", "EmbASP"],
+            "isIndividual": false
         },
         {
             "name": "GoodVibes",

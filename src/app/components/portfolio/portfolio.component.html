@@ -1,72 +1,95 @@
 <div class="portfolio-container align-items-center text-center pt-3">
-  <h1 class="portfolio-heading">Portfolio</h1>
-  <h2 class="sub-heading">University</h2>
-  <div class="university-cards d-flex row mt-2 mb-5 ms-5 me-5 g-4">
-    <div class="col" *ngFor="let entry of university">
-      <a href="{{entry.gitUrl}}">
-        <div class="card h-100 shadow">
-        <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary">
-          {{entry.year}} - {{entry.isIndividual ? "Individual" : "Team"}}
-          <span class="visually-hidden">Involved technologies</span>
-        </span>
-          <img src="{{entry.imgUrl}}" class="card-img-top"/>
-          <div class="card-body">
-            <h5 class="card-title">{{entry.name}}</h5>
-            <p class="card-text">
-              {{entry.description}}
-            </p>
-            <small class="text-muted">{{entry.techInvolved.join(", ")}}</small>
-          </div>
+    <h1 class="portfolio-heading">Portfolio</h1>
+    <h2 class="sub-heading">University</h2>
+    <h3 class="sub-sub-heading">Master</h3>
+    <div class="university-cards d-flex row mt-2 mb-5 ms-5 me-5 g-4">
+        <div class="col" *ngFor="let entry of universityMaster">
+            <a href="{{entry.gitUrl}}">
+                <div class="card h-100 shadow">
+                    <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary">
+                        {{entry.year}} - {{entry.isIndividual ? "Individual" : "Team"}}
+                        <span class="visually-hidden">Involved technologies</span>
+                    </span>
+                    <img src="{{entry.imgUrl}}" class="card-img-top"/>
+                    <div class="card-body">
+                        <h5 class="card-title">{{entry.name}}</h5>
+                        <p class="card-text">
+                            {{entry.description}}
+                        </p>
+                        <small class="text-muted">{{entry.techInvolved.join(", ")}}</small>
+                    </div>
+                </div>
+            </a>
         </div>
-      </a>
     </div>
-  </div>
-
-  <hr class="hr ms-5 me-5 mt-5" />
-
-  <h2 class="sub-heading mt-5">High School</h2>
-  <div class="school-cards d-flex row mt-2 mb-5 ms-5 me-5 g-4">
-    <div class="col" *ngFor="let entry of school">
-      <a href="{{entry.gitUrl}}">
-        <div class="card h-100 shadow">
-        <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary">
-          {{entry.year}} - {{entry.isIndividual ? "Individual" : "Team"}}
-          <span class="visually-hidden">Involved technologies</span>
-        </span>
-          <img src="{{entry.imgUrl}}" class="card-img-top"/>
-          <div class="card-body">
-            <h5 class="card-title">{{entry.name}}</h5>
-            <p class="card-text">
-              {{entry.description}}
-            </p>
-            <small class="text-muted">{{entry.techInvolved}}</small>
-          </div>
+    <h3 class="sub-sub-heading">Bachelor</h3>
+    <div class="university-cards d-flex row mt-2 mb-5 ms-5 me-5 g-4">
+        <div class="col" *ngFor="let entry of universityBachelor">
+            <a href="{{entry.gitUrl}}">
+                <div class="card h-100 shadow">
+                    <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary">
+                        {{entry.year}} - {{entry.isIndividual ? "Individual" : "Team"}}
+                        <span class="visually-hidden">Involved technologies</span>
+                    </span>
+                    <img src="{{entry.imgUrl}}" class="card-img-top"/>
+                    <div class="card-body">
+                        <h5 class="card-title">{{entry.name}}</h5>
+                        <p class="card-text">
+                            {{entry.description}}
+                        </p>
+                        <small class="text-muted">{{entry.techInvolved.join(", ")}}</small>
+                    </div>
+                </div>
+            </a>
         </div>
-      </a>
     </div>
-  </div>
 
-  <hr class="hr ms-5 me-5 mt-5"/>
 
-  <h2 class="sub-heading mt-5">Personal</h2>
-  <div class="school-cards d-flex row mt-2 pb-5 ms-5 me-5 g-4">
-    <div class="col" *ngFor="let entry of personal">
-      <a href="{{entry.gitUrl}}">
-        <div class="card h-100 shadow">
-        <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary">
-          {{entry.year}} - {{entry.isIndividual ? "Individual" : "Team"}}
-          <span class="visually-hidden">Involved technologies</span>
-        </span>
-          <img src="{{entry.imgUrl}}" class="card-img-top"/>
-          <div class="card-body">
-            <h5 class="card-title">{{entry.name}}</h5>
-            <p class="card-text">
-              {{entry.description}}
-            </p>
-            <small class="text-muted">{{entry.techInvolved}}</small>
-          </div>
+    <hr class="hr ms-5 me-5 mt-5" />
+
+    <h2 class="sub-heading mt-5">High School</h2>
+    <div class="school-cards d-flex row mt-2 mb-5 ms-5 me-5 g-4">
+        <div class="col" *ngFor="let entry of school">
+            <a href="{{entry.gitUrl}}">
+                <div class="card h-100 shadow">
+            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary">
+              {{entry.year}} - {{entry.isIndividual ? "Individual" : "Team"}}
+                <span class="visually-hidden">Involved technologies</span>
+            </span>
+                    <img src="{{entry.imgUrl}}" class="card-img-top"/>
+                    <div class="card-body">
+                        <h5 class="card-title">{{entry.name}}</h5>
+                        <p class="card-text">
+                            {{entry.description}}
+                        </p>
+                        <small class="text-muted">{{entry.techInvolved}}</small>
+                    </div>
+                </div>
+            </a>
         </div>
-      </a>
     </div>
-  </div>
+
+    <hr class="hr ms-5 me-5 mt-5"/>
+
+    <h2 class="sub-heading mt-5">Personal</h2>
+    <div class="school-cards d-flex row mt-2 pb-5 ms-5 me-5 g-4">
+        <div class="col" *ngFor="let entry of personal">
+            <a href="{{entry.gitUrl}}">
+                <div class="card h-100 shadow">
+            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary">
+              {{entry.year}} - {{entry.isIndividual ? "Individual" : "Team"}}
+                <span class="visually-hidden">Involved technologies</span>
+            </span>
+                    <img src="{{entry.imgUrl}}" class="card-img-top"/>
+                    <div class="card-body">
+                        <h5 class="card-title">{{entry.name}}</h5>
+                        <p class="card-text">
+                            {{entry.description}}
+                        </p>
+                        <small class="text-muted">{{entry.techInvolved}}</small>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
 </div>
