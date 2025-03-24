@@ -28,11 +28,14 @@ $shadow: 4px 4px rgba(0,0,0,0.05);
   text-shadow: $shadow;
   font-size: 2.2vw;
   font-weight: 300;
+  overflow: hidden; // Important for smooth transition
+  white-space: nowrap; // Prevent text wrapping during transition
 }
 
 @media(max-width: 767px) {
   .propic {
     margin-bottom: 15px;
+    max-width: 45vw;
   }
 
   .full-name {
@@ -41,5 +44,35 @@ $shadow: 4px 4px rgba(0,0,0,0.05);
 
   .subtitle {
     font-size: 5vw;
+  }
+}
+
+.slide-out {
+  animation: slideOut 0.5s forwards;
+}
+
+.slide-in {
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
